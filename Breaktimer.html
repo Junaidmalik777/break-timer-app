@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Break Timer App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Break Timer Dashboard</h1>
+    
+    <div class="timer-card">
+      <h2>Break 1</h2>
+      <select id="break1Type">
+        <option value="15">Short Break (15 min)</option>
+        <option value="30">Meal Break (30 min)</option>
+      </select>
+      <button onclick="startTimer('break1')">Start</button>
+      <div id="break1Timer" class="time-display">00:00</div>
+      <div class="progress-bar"><div id="break1Progress" class="progress"></div></div>
+    </div>
+
+    <div class="timer-card">
+      <h2>Break 2</h2>
+      <select id="break2Type">
+        <option value="15">Short Break (15 min)</option>
+        <option value="30">Meal Break (30 min)</option>
+      </select>
+      <button onclick="startTimer('break2')">Start</button>
+      <div id="break2Timer" class="time-display">00:00</div>
+      <div class="progress-bar"><div id="break2Progress" class="progress"></div></div>
+    </div>
+
+    <div class="timer-card">
+      <h2>BRB (7 min)</h2>
+      <button onclick="startTimer('brb')">Start</button>
+      <div id="brbTimer" class="time-display">00:00</div>
+      <div class="progress-bar"><div id="brbProgress" class="progress"></div></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
